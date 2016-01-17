@@ -76,35 +76,13 @@ running the script below.
 > Wait for a while...
 
 #### Windows ####
-> Download Ruby for Windows at http://rubyinstaller.org/.  When
->installing make sure that you check "Add Ruby executables to your
->PATH", it is not checked by default.  You must also install the
->DevKit for windows which can also be downloaded from the same
->page. At this point you should have installed Ruby and
->Devkit. Helpful instructions for install DevKit can be found here:
->http://stackoverflow.com/a/8463500/1424115
-
-> Install Bundler in the /developer-startup directory.
-
-`C:/developer-startup> gem install bundler`
-
->Note: if you receive the following error
-
-`SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed`
-
->please visit
->https://gist.github.com/luislavena/f064211759ee0f806c88 and follow
->the instructions to resolve the issue, it is an easy fix.
-
-> At this point you should have bundler installed.
-
-> Run the following command:
-
-`C:\developer-startup>bundle install`
 
 `C:\developer-startup>vagrant up`
 
 > Wait for a while...
+
+> Windows 10 users -- Make sure Hyper-V is disabled by runnning in Command Prompt (as Administrator)
+> `bcdedit /set hypervisorlaunchtype off`
 
 ### Setup your Virtual Machine ###
 
